@@ -11,7 +11,17 @@ docker build -t docker_boom:1.0 .
 ```
 
 ## 查看内存/CPU占用
+
+直接使用 docker 的命令
+
 ```
+docker stats | head
+```
+
+或者使用脚本。
+
+
+```shell
 pip install psutil
 python3 stat.py
 ```
